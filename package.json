@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "0.1.0",
-  "homepage": "https://autecht.github.io/react-gh-pages",
+  "homepage": "https://autecht.github.io/website",
   "private": true,
   "dependencies": {
     "16": "^0.0.2",
