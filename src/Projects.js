@@ -6,6 +6,24 @@ function Projects() {
       <div class="filler"></div>
       <h1 class="heading">Projects</h1>
 
+      <h2 class="heading"> <a href="https://github.com/autecht/contextawareversioncontrol"> Context-Aware Version Control </a> </h2>
+      <p class="body">
+        This project was originally intended to be a design project showcasing information spaces and entities. 
+        Informed by previous research and prototypes, we designed an application on top of version control to allow users to easily understand navigate repositories based on the context of their actions.
+
+        <br></br>
+        With a top grade in the class, we decided to redesign and implement the application as independent study with Professor Hollan.
+        We created an extension to VSCode in Typescript, integrating Git shell commands to retrieve repository data and enable interactive exploration of commit history.
+        Starting with our orignal design, we displayed previous, interactive commits based on relevance metrics as well as the lines deemed most relevant. 
+        We included a hover provider to allow the user to see the commit responsible for each line and view and interact with the individual commit.
+        With the VS Code WebView API, we designed a fully customized visualization of the relevance of commits responsible for each line in a file.
+        <br></br>
+        After the end of the quarter, I added a comment section to each commit, using a local PostgreSQL backend to store comments and adding clear documentation to allow users to set up the database.
+
+
+      </p>
+
+
       <h2 class="heading"> Mock University Database </h2>
       <p class="body">
         I worked with a partner to design and implement a university database, then efficiently access it on a webpage.

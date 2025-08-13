@@ -8,16 +8,7 @@ function Home() {
       <h1 class="heading">About</h1>
 
       <p class="body">
-        Throughout college, I have had to accept that I can't pursue every opportunity. Dozens of majors would provide a fascinating career path, I could spend a lifetime taking all of the courses I would like to, and there are so many student organizations it becomes tedious to read through them.
-      </p>
-      <p class="body">
-        Thus the importance of taking advantage of the opportunities I can. I have pursued a fascination in Cognitive Science, a field I previously didn’t know existed. I found incredible people in classes, organizations, and working at a dining hall. I applied data structures and algorithms inside and out of the classroom, used agile development and object oriented programming, and practiced my understanding of relational databases.
-      </p>
-      <p class="body">
-        Off campus, I've come to appreciate the simple opportunities. I don't need a degree to spend time with family, complete Cyberpunk 2077, or enjoy a game of chess, yet never before have these been more important to me.
-      </p>
-      <p class="body">
-        As I finish my undergraduate education and transition to the next step of my career, I can’t wait to see what new opportunities present themselves.
+      I'm a recent Computer Science graduate from UC San Diego with strong academic foundations (4.0 GPA) and hands-on experience in software development. I've applied my skills in agile development, object-oriented programming, relational databases, and version control. By tutoring in relational databases and operating systems, I not only helped others succeed, but also strengthened my grasp of complex material. I'm excited to bring my passion for building reliable, impactful software in a collaborative setting to a full-time engineering role.
       </p>
       
     </>
