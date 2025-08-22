@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/arthurutecht.com/static/css/main.f17a4bcf.css",
-    "main.js": "/arthurutecht.com/static/js/main.d4b1d71d.js",
-    "static/media/headshot.jpg": "/arthurutecht.com/static/media/headshot.08eeb6303b7f88f8de4c.jpg",
-    "index.html": "/arthurutecht.com/index.html",
-    "main.f17a4bcf.css.map": "/arthurutecht.com/static/css/main.f17a4bcf.css.map",
-    "main.d4b1d71d.js.map": "/arthurutecht.com/static/js/main.d4b1d71d.js.map"
+    "main.css": "/static/css/main.f17a4bcf.css",
+    "main.js": "/static/js/main.3f3e3d3c.js",
+    "static/media/headshot.jpg": "/static/media/headshot.08eeb6303b7f88f8de4c.jpg",
+    "index.html": "/index.html",
+    "main.f17a4bcf.css.map": "/static/css/main.f17a4bcf.css.map",
+    "main.3f3e3d3c.js.map": "/static/js/main.3f3e3d3c.js.map"
   },
   "entrypoints": [
     "static/css/main.f17a4bcf.css",
-    "static/js/main.d4b1d71d.js"
+    "static/js/main.3f3e3d3c.js"
   ]
 }
