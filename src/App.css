@@ -1,18 +1,50 @@
 :root {
-  --background: #ffffff;
+  --background: #ecf2fd;
   --primary: #CADCFC;
   --secondary: #00246B;
   --text: #031d3d;
   --heading: #000211;
-  --header-text-color: #dddef7;
+}
+
+.section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem 0;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.about-image {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.about-heading {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.reverse{
+  flex-direction: row-reverse;
 }
 
 .rounded-box {
+  flex: 1;
   border-radius: 15px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 5px;
   padding-top: 5px;
+  max-width: fit-content;
   /* margin-bottom: 10px; */
 }
 
@@ -22,6 +54,7 @@
 
 .heading-box{
   background-color: var(--secondary);
+  text-align: center;
 }
 
 .header {
@@ -45,9 +78,7 @@
 .heading {
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 5px;
-  border-bottom: 3px solid var(--secondary);
-  color: var(--header-text-color);
+  color: var(--background);
 }
 
 
@@ -82,7 +113,7 @@
 
 .menu {
   font-size: 14px;
-  color: var(--header-text-color);
+  color: var(--background);
 }
 
 .menu-container {
@@ -103,15 +134,16 @@
 }
 
 .name {
-  color: var(--header-text-color);
+  color: var(--background);
 }
 
 
 .image{
-  margin-top: 30px;
-  max-width: 50%;
-  width: 100px; 
-  height: 100px; 
-  border-radius: 50%;
+  /* margin-top: 30px; */
+  max-width: 300px;
+  max-height: 200px;
+  /* width: 100px;  */
+  /* height: 100px;  */
+  border-radius: 10px;
   object-fit: cover;
 }
