@@ -1,14 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.898045f3.css",
-    "main.js": "/static/js/main.7c1b1d1a.js",
-    "static/media/graduation.JPEG": "/static/media/graduation.529781badabcfc51177f.JPEG",
+    "main.css": "/static/css/main.46063a8c.css",
+    "main.js": "/static/js/main.4ab37e8f.js",
+    "static/media/Computer_Science_and_Engineering.jpg": "/static/media/Computer_Science_and_Engineering.17addf801df887646299.jpg",
+    "static/media/Personal_organizer_with_metallic_ring_binder.jpg": "/static/media/Personal_organizer_with_metallic_ring_binder.69c4430010ea435dd993.jpg",
+    "static/media/graduation.JPEG": "/static/media/graduation.c551a2a3b09a42da3a4b.JPEG",
+    "static/media/Courtright.jpg": "/static/media/Courtright.f05d0e09014410b02457.jpg",
+    "static/media/Intel_pentium4_1.5ghz_willamette_socek423.jpg": "/static/media/Intel_pentium4_1.5ghz_willamette_socek423.9b1c2c414b283f9419b1.jpg",
+    "static/media/resized-file.png": "/static/media/resized-file.2a9d538c235c97c335de.png",
+    "static/media/pantryPalLogin.png": "/static/media/pantryPalLogin.40f449221e69e93e6de3.png",
+    "static/media/quick-to-do.png": "/static/media/quick-to-do.3738ccd93a3989016b66.png",
+    "static/media/Logo_PostgreSQL.png": "/static/media/Logo_PostgreSQL.52d31cc1fd8306d5ff52.png",
+    "static/media/SimpleChess.png": "/static/media/SimpleChess.e7c2017e58efe8bb3c83.png",
     "index.html": "/index.html",
-    "main.898045f3.css.map": "/static/css/main.898045f3.css.map",
-    "main.7c1b1d1a.js.map": "/static/js/main.7c1b1d1a.js.map"
+    "main.46063a8c.css.map": "/static/css/main.46063a8c.css.map",
+    "main.4ab37e8f.js.map": "/static/js/main.4ab37e8f.js.map"
   },
   "entrypoints": [
-    "static/css/main.898045f3.css",
-    "static/js/main.7c1b1d1a.js"
+    "static/css/main.46063a8c.css",
+    "static/js/main.4ab37e8f.js"
   ]
 }
