@@ -26,6 +26,22 @@ a:hover{
   justify-content: space-between;
   gap: 20px;
 }
+.reverse{
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .section{
+    flex-direction: column;
+  }
+  .reverse{
+    flex-direction: column;
+  }
+}
+
+.column {
+  flex-direction: column;
+}
 
 .about {
   position: relative;
@@ -46,9 +62,7 @@ a:hover{
   color: rgba(0, 0, 0, 0.8);
 }
 
-.reverse{
-  flex-direction: row-reverse;
-}
+
 
 .rounded-box {
   flex: 1;
