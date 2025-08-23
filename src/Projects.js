@@ -6,7 +6,7 @@ import contextAwareVersionControl from "./images/resized-file.png"
 import pantryPal from "./images/pantryPalLogin.png"
 import quickToDo from "./images/quick-to-do.png"
 import simpleChess from "./images/SimpleChess.png"
-import { Section, SectionReverse } from "./Components";
+import { Section} from "./Components";
 
 
 function Projects() {
@@ -18,7 +18,7 @@ function Projects() {
         <Heading heading="Projects" h1={true} />
       </Section>
 
-      <SectionReverse>
+      <Section reverse = {true}>
         {HeadingWithImage({
           href: "https://github.com/autecht/contextawareversioncontrol",
           image: contextAwareVersionControl,
@@ -39,7 +39,7 @@ function Projects() {
           After the end of the quarter, I added a comment section to each commit, using a local PostgreSQL backend to store comments and adding clear documentation to allow users to set up the database.
 
         </BodyBox>
-      </SectionReverse>
+      </Section>
 
       <Section>
         <HeadingWithImage image={pantryPal} heading="pantryPal" href="https://github.com/ucsd-cse110-fa23/cse-110-project-team-24" />
@@ -60,7 +60,7 @@ function Projects() {
       </Section>
 
 
-      <SectionReverse>
+      <Section reverse = {true}>
         {HeadingWithImageAndCredit({
           heading: "Mock University Database",
           image: postgresLogo,
@@ -82,7 +82,7 @@ function Projects() {
           To efficiently run some of these queries, we created triggers to maintain materialized views. We also used triggers to enforce constraints on data.
 
         </BodyBox>
-      </SectionReverse>
+      </Section>
 
 
 
@@ -103,7 +103,7 @@ function Projects() {
       </Section>
 
 
-      <SectionReverse>
+      <Section reverse = {true}>
         {HeadingWithImage({
           image: processor,
           heading: "Custom Processor",
@@ -124,7 +124,7 @@ function Projects() {
           tested and debugged the processor and each program using ModelSim.
 
         </BodyBox>
-      </SectionReverse>
+      </Section>
 
 
 
@@ -160,7 +160,7 @@ function Projects() {
 
 
 
-      <SectionReverse>
+      <Section reverse = {true}>
         <HeadingWithImage image={simpleChess} heading="Simple Chess" alt="chess board" href="https://github.com/autecht/simple-chess" />
         
         <BodyBox>
@@ -169,7 +169,7 @@ function Projects() {
           and JavaScript. The site features original SVG piece models and uses HTML text validation to validate usernames. I created this website to solidify what I learned from an online front-end course.
 
         </BodyBox>
-      </SectionReverse>
+      </Section>
     </>
   );
 

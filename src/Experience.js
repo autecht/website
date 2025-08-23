@@ -1,5 +1,5 @@
 import { React } from "react";
-import { Section, Heading, BodyBox, SectionReverse } from "./Components";
+import { Section, Heading, BodyBox} from "./Components";
 
 function Experience() {
   return (
@@ -32,7 +32,7 @@ function Experience() {
       </Section>
 
 
-      <SectionReverse>
+      <Section reverse = {true}>
         <div class="rounded-box heading-box">
           <h2 class="heading">Student Worker</h2><div class="name">January 2023-November 2023 </div>
         </div>
@@ -41,7 +41,7 @@ function Experience() {
             I mostly worked as a food preparer, learning to efficiently and safely prepare food in an organized environment. During this time, I developed strong connections with my coworkers and learned to work well in a team.
           </p>
         </div>
-      </SectionReverse>
+      </Section>
 
       <Section>
         <div class="rounded-box heading-box">

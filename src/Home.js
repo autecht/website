@@ -1,7 +1,7 @@
 import graduation from './images/graduation.JPEG'
 import computer_science from './images/Computer_Science_and_Engineering.jpg'
 import courtright from './images/Courtright.jpg'
-import { BodyBox, HeadingWithImage, HeadingWithImageAndCredit, Section, SectionReverse } from './Components';
+import { BodyBox, HeadingWithImage, HeadingWithImageAndCredit, Section} from './Components';
 
 
 function Home() {
@@ -31,7 +31,7 @@ function Home() {
         </BodyBox>
       </Section>
 
-      <SectionReverse>
+      <Section reverse = {true}>
         <HeadingWithImage image={courtright} heading="More About Me" />
 
         <BodyBox>
@@ -40,7 +40,7 @@ function Home() {
           I don't go on hikes often enough, but I love walking through nature when I can.
           In everyday life, I care about compassion and ethics — one way this shows up is being vegan.
         </BodyBox>
-      </SectionReverse>
+      </Section>
     </>
   );
 }

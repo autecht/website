@@ -41,14 +41,12 @@ export function BodyBox({ children }) {
 }
 
 export function Section({ children, reverse=false }) {
-  return <div class="section">
+  return <div class={reverse?"section reverse":"section"}>
     {children}
+
+    <div style= {{flex: 0.25}}></div>
   </div>;
 }
 
-export function SectionReverse({ children }) {
-  return <div class="section reverse">
-    {children}
-  </div>;
-}
+
 
