@@ -1,45 +1,66 @@
-import { HeadingWithImageAndCredit, BodyBox, HeadingWithImage } from "./Home";
+import { HeadingWithImageAndCredit, BodyBox, HeadingWithImage, Heading } from "./Components";
 import postgresLogo from "./images/Logo_PostgreSQL.png";
 import processor from "./images/Intel_pentium4_1.5ghz_willamette_socek423.jpg"
 import planner from "./images/Personal_organizer_with_metallic_ring_binder.jpg"
+import contextAwareVersionControl from "./images/resized-file.png"
+import pantryPal from "./images/pantryPalLogin.png"
+import quickToDo from "./images/quick-to-do.png"
+import simpleChess from "./images/SimpleChess.png"
+import { Section, SectionReverse } from "./Components";
+
 
 function Projects() {
   return (
     <>
-
-
       <div class="filler"></div>
 
-      <section class="section">
-        <h1 class="heading rounded-box heading-box">Projects</h1>
-      </section>
+      <Section>
+        <Heading heading="Projects" h1={true} />
+      </Section>
 
-      <div class="section">
-        <div class="rounded-box heading-box">
-          <h2 class="heading"> <a href="https://github.com/autecht/contextawareversioncontrol"> Context-Aware Version Control </a> </h2>
-        </div>
-        <div class="rounded-box body-box">
-          <p class="body">
-            This project was originally intended to be a design project showcasing information spaces and entities.
-            Informed by previous research and prototypes, we designed an application on top of version control to allow users to easily understand navigate repositories based on the context of their actions.
+      <SectionReverse>
+        {HeadingWithImage({
+          href: "https://github.com/autecht/contextawareversioncontrol",
+          image: contextAwareVersionControl,
+          heading: "Context-Aware Version Control",
+        })}
 
-            <br></br><br></br>
-            With a top grade in the class, we decided to redesign and implement the application as independent study with Professor Hollan.
-            We created an extension to VSCode in Typescript, integrating Git shell commands to retrieve repository data and enable interactive exploration of commit history.
-            Starting with our orignal design, we displayed previous, interactive commits based on relevance metrics as well as the lines deemed most relevant.
-            We included a hover provider to allow the user to see the commit responsible for each line and view and interact with the individual commit.
-            With the VS Code WebView API, we designed a fully customized visualization of the relevance of commits responsible for each line in a file.
-            <br></br><br></br>
-            After the end of the quarter, I added a comment section to each commit, using a local PostgreSQL backend to store comments and adding clear documentation to allow users to set up the database.
+        <BodyBox>
+          Context-Aware Version Control started as a project for a Human-Computer Interaction class to showcase information entities and spaces.
+          Informed by previous research and prototypes, my partner and I designed an application on top of version control to allow users to easily understand navigate repositories based on the context of their actions.
+
+          <br></br><br></br>
+          With a top grade in the class, we decided to redesign and implement the application as independent study with Professor Hollan.
+          We created an extension to VSCode in Typescript, integrating Git shell commands to retrieve repository data and enable interactive exploration of commit history.
+          Starting with our orignal design, we displayed previous, interactive commits based on relevance metrics as well as the lines deemed most relevant.
+          We included a hover provider to allow the user to see the commit responsible for each line and view and interact with the individual commit.
+          With the VS Code WebView API, we designed a fully customized visualization of the relevance of commits responsible for each line in a file.
+          <br></br><br></br>
+          After the end of the quarter, I added a comment section to each commit, using a local PostgreSQL backend to store comments and adding clear documentation to allow users to set up the database.
+
+        </BodyBox>
+      </SectionReverse>
+
+      <Section>
+        <HeadingWithImage image={pantryPal} heading="pantryPal" href="https://github.com/ucsd-cse110-fa23/cse-110-project-team-24" />
+
+        <BodyBox>
+          My group created a Java application to generate and store unique recipes given certain ingredients.
+          We used JavaFX to implement a responsive user interface, the ChatGPT API to generate unique recipes,
+          the Whisper API to recognize voice input, and MongoDB to store user recipes on the cloud. We created an
+          HTTP server to separate backend logic.
+          <br /><br />
+          Throughout the project, we followed an Agile Development process. We created user stories from End-to-End scenarios, strove to eliminate ambiguity,
+          wrote BDD scenarios for each user stories, separated user stories into tasks, made time estimates for tasks and user stories,
+          accounted for velocity,
+          planned iterations and Milestones, and tested features with unit and story tests. We also designed and refactored our
+          code to follow Object-Oriented principles and design patterns, including the single responsibility principle, the Strategy Pattern, and the Model-View-Presenter pattern.
+
+        </BodyBox>
+      </Section>
 
 
-          </p>
-        </div>
-      </div>
-
-
-      {/* <a href="https://commons.wikimedia.org/wiki/File:Logo_PostgreSQL.png">Daniel Lundin</a>, <a href="http://opensource.org/licenses/bsd-license.php">BSD</a>, via Wikimedia Commons */}
-      <div class="section reverse">
+      <SectionReverse>
         {HeadingWithImageAndCredit({
           heading: "Mock University Database",
           image: postgresLogo,
@@ -49,86 +70,65 @@ function Projects() {
           creditLicenseUrl: "http://opensource.org/licenses/bsd-license.php"
 
         })}
-        
+
         <BodyBox>
-            I worked with a partner to design and implement a university database, then efficiently access it on a webpage.
-            We implemented the database using PostgreSQL and used the PostgreSQL JDBC Driver to access it.
-            We built our dynamic website to access, update, insert, and delete all data in the database with Java Server Pages on and Apache Tomcat server.
-            <br /> <br />
-            Following project specifications, my partner and I modeled the database with an entity-relationahip diagram, which we transferred to a relational database schema.
-            We created webpages allow the user to view and update data about courses, classes, faculty, departments, students, scholarships, and their relationships.
-            After implementing these entry forms, we designed forms to allow users to view more complex data about individual students, professors, and courses using parameterized queries.
-            To efficiently run some of these queries, we created triggers to maintain materialized views. We also used triggers to enforce constraints on data.
+          I worked with a partner to design and implement a university database, then efficiently access it on a webpage.
+          We implemented the database using PostgreSQL and used the PostgreSQL JDBC Driver to access it.
+          We built our dynamic website to access, update, insert, and delete all data in the database with Java Server Pages on and Apache Tomcat server.
+          <br /> <br />
+          Following project specifications, my partner and I modeled the database with an entity-relationahip diagram, which we transferred to a relational database schema.
+          We created webpages allow the user to view and update data about courses, classes, faculty, departments, students, scholarships, and their relationships.
+          After implementing these entry forms, we designed forms to allow users to view more complex data about individual students, professors, and courses using parameterized queries.
+          To efficiently run some of these queries, we created triggers to maintain materialized views. We also used triggers to enforce constraints on data.
 
         </BodyBox>
-      </div>
+      </SectionReverse>
 
 
-      <div class="section">
+
+      <Section>
+        <HeadingWithImage image={quickToDo} heading="Quick To-Do" alt="A screenshot of Quick To-Do" href="//github.com/autecht/quick-to-do" />
+
+        <BodyBox>
+          Quick To-Do is a command-line task manager designed to be simple to use while providing the user easy-to-understand and
+          optional features to organize and display tasks. Users can add, list, modify, and remove tasks with a label. They can optionally
+          add a due date and time, priority level, description, and tag to each task to modify how tasks are displayed, sorted, and found. Detailed
+          feedback and documentation for all options can be found within
+          the application or on GitHub.
+          <br /><br />
+          I learned the picocli library to implement command-line functionality and provide feedback. I used GraalVM to compile the
+          application into a stand-alone executable. To follow convention and use picocli, I researched and used the structure of typical
+          command-line applications. In order to read data from local files to be represented as objects, I created a custom wrapper class.
+        </BodyBox>
+      </Section>
+
+
+      <SectionReverse>
         {HeadingWithImage({
           image: processor,
           heading: "Custom Processor",
           alt: "A computer processor",
         })}
-        
+
         <BodyBox>
-          
-            I used System Verilog to design a synthesizeable computer processor adhering to constraints and capable of carrying out three programs.
-            The processor accepted fixed-length 9-bit machine code and had a byte-wide data path, byte-wide registers, and byte-wide memory locations.
-            The ALU could only accept operations comparable in complexity to addition.
-            It was able calculate and compare the hamming distance, arithmetic difference, and product of combinations of 32 signed 16-bit numbers.
-            <br /><br />
-            With the 3 programs and constraints in mind, I designed an initial ISA for the processor.
-            I wrote syntehsizeable System Verilog code to implement a processor that could carry out this ISA and created an initial testbench
-            for the processor.
-            Using Java, I coded an assembler for the ISA. In the final Milestone, I wrote the assembly for each program and
-            tested and debugged the processor and each program using ModelSim.
-          
+
+          I used System Verilog to design a synthesizeable computer processor adhering to constraints and capable of carrying out three programs.
+          The processor accepted fixed-length 9-bit machine code and had a byte-wide data path, byte-wide registers, and byte-wide memory locations.
+          The ALU could only accept operations comparable in complexity to addition.
+          It was able calculate and compare the hamming distance, arithmetic difference, and product of combinations of 32 signed 16-bit numbers.
+          <br /><br />
+          With the 3 programs and constraints in mind, I designed an initial ISA for the processor.
+          I wrote syntehsizeable System Verilog code to implement a processor that could carry out this ISA and created an initial testbench
+          for the processor.
+          Using Java, I coded an assembler for the ISA. In the final Milestone, I wrote the assembly for each program and
+          tested and debugged the processor and each program using ModelSim.
+
         </BodyBox>
-      </div>
+      </SectionReverse>
 
-      <div class="section reverse">
-        <div class="rounded-box heading-box">
-          <h2 class="heading"> <a href="https://github.com/ucsd-cse110-fa23/cse-110-project-team-24">pantryPal</a></h2>
-        </div>
-        <div class="rounded-box body-box">
-          <p class="body">
-            My group created a Java application to generate and store unique recipes given certain ingredients.
-            We used JavaFX to implement a responsive user interface, the ChatGPT API to generate unique recipes,
-            the Whisper API to recognize voice input, and MongoDB to store user recipes on the cloud. We created an
-            HTTP server to separate backend logic.
-            <br /><br />
-            Throughout the project, we followed an Agile Development process. We created user stories from End-to-End scenarios, strove to eliminate ambiguity,
-            wrote BDD scenarios for each user stories, separated user stories into tasks, made time estimates for tasks and user stories,
-            accounted for velocity,
-            planned iterations and Milestones, and tested features with unit and story tests. We also designed and refactored our
-            code to follow Object-Oriented principles and design patterns, including the single responsibility principle, the Strategy Pattern, and the Model-View-Presenter pattern.
 
-          </p>
-        </div>
-      </div>
 
-      <div class="section">
-        <div class="rounded-box heading-box">
-          <h2 class="heading"> <a href="https://github.com/autecht/-quick-to-do">Quick To-Do</a></h2>
-        </div>
-        <div class="rounded-box body-box">
-          <p class="body">
-            Quick To-Do is a command-line task manager designed to be simple to use while providing the user easy-to-understand and
-            optional features to organize and display tasks. Users can add, list, modify, and remove tasks with a label. They can optionally
-            add a due date and time, priority level, description, and tag to each task to modify how tasks are displayed, sorted, and found. Detailed
-            feedback and documentation for all options can be found within
-            the application or on GitHub.
-            <br /><br />
-            I learned the picocli library to implement command-line functionality and provide feedback. I used GraalVM to compile the
-            application into a stand-alone executable. To follow convention and use picocli, I researched and used the structure of typical
-            command-line applications. In order to read data from local files to be represented as objects, I created a custom wrapper class.
-          </p>
-        </div>
-      </div>
-
-      {/* <a href="https://commons.wikimedia.org/wiki/File:Personal_organizer_with_metallic_ring_binder.jpg">Old Photo Profile</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons */}
-      <div class="section reverse">
+      <Section>
         {HeadingWithImageAndCredit({
           heading: "Enhancing Digital Planner Design",
           image: planner,
@@ -139,40 +139,37 @@ function Projects() {
           creditLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
         }
         )
-        
+
         }
         <BodyBox>
-            As part of a Human-Computer Interaction class, three group members and I conducted a study
-            to analyze university students' preference and use of physical and digital planners. We concluded university students largely use digital
-            planners to for their functional convenience and physical planners for their emotional connection, frequently creating a system with both a physical and
-            digital planner to combine these benefits.
+          As part of a Human-Computer Interaction class, three group members and I conducted a study
+          to analyze university students' preference and use of physical and digital planners. We concluded university students largely use digital
+          planners to for their functional convenience and physical planners for their emotional connection, frequently creating a system with both a physical and
+          digital planner to combine these benefits.
 
-            <br /><br />
-            Once our project proposal, which included a plan for conducting the rest of the project and a specific goal, was accepted,
-            we constructed a survey with qualitative and quantitative questions to gain insight into reasons behind university students' planner use.
-            We also designed an interview outline and conducted 25-minute interviews with volunteers. We identified broad categories with which to observe trends
-            in qualitative responses. Considering quantitative responses, qualitative trends, and qualitative responses, we identified prominent tools used as physical and digital planners, factors influencing planner choice, aspects students
-            appreciated, problems encountered, potential design improvements, and situational preferences in
-            a report with an abstract, an introduction, related work, methods, discussion, and a conclusion.
+          <br /><br />
+          Once our project proposal, which included a plan for conducting the rest of the project and a specific goal, was accepted,
+          we constructed a survey with qualitative and quantitative questions to gain insight into reasons behind university students' planner use.
+          We also designed an interview outline and conducted 25-minute interviews with volunteers. We identified broad categories with which to observe trends
+          in qualitative responses. Considering quantitative responses, qualitative trends, and qualitative responses, we identified prominent tools used as physical and digital planners, factors influencing planner choice, aspects students
+          appreciated, problems encountered, potential design improvements, and situational preferences in
+          a report with an abstract, an introduction, related work, methods, discussion, and a conclusion.
 
         </BodyBox>
-      </div>
+      </Section>
 
 
 
-      <div class="section">
-        <div class="rounded-box heading-box">
-          <h2 class="heading"> <a href="https://github.com/autecht/simple-chess">Simple Chess</a></h2>
-        </div>
-        <div class="rounded-box body-box">
-          <p class="body">
+      <SectionReverse>
+        <HeadingWithImage image={simpleChess} heading="Simple Chess" alt="chess board" href="https://github.com/autecht/simple-chess" />
+        
+        <BodyBox>
 
-            Simple Chess is an interface with which users can manipulate chess pieces on a board. It an HTML website with CSS
-            and JavaScript. The site features original SVG piece models and uses HTML text validation to validate usernames. I created this website to solidify what I learned from an online front-end course.
+          Simple Chess is an interface with which users can manipulate chess pieces on a board. It an HTML website with CSS
+          and JavaScript. The site features original SVG piece models and uses HTML text validation to validate usernames. I created this website to solidify what I learned from an online front-end course.
 
-          </p>
-        </div>
-      </div>
+        </BodyBox>
+      </SectionReverse>
     </>
   );
 

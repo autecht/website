@@ -71,6 +71,7 @@ a:hover{
 .heading-box{
   background-color: var(--secondary);
   text-align: center;
+  align-items: center;
 }
 
 .header {
