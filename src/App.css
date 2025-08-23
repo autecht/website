@@ -80,6 +80,7 @@ a:hover{
 
 .body-box{
   background-color: var(--primary);
+  text-align: left;
 }
 
 .heading-box{
