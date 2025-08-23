@@ -14,7 +14,7 @@ function Experience() {
       </p>
 
       <h2 class="heading">Student Worker, January 2023-November 2024</h2>
-      <p>As a studnet worker at the UCSD dining hall, I worked with team in various roles to prepare food, wash dishes, provide pleasant customer service, and preserve smooth operation of the restaurant. </p>
+      <p>As a student worker at the UCSD dining hall, I worked with team in various roles to prepare food, wash dishes, provide pleasant customer service, and preserve smooth operation of the restaurant. </p>
 
 
       
