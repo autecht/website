@@ -40,7 +40,7 @@ function Projects() {
         <div class="rounded-box body-box">
           <p class="body">
             I worked with a partner to design and implement a university database, then efficiently access it on a webpage.
-            We implemented the database using PostreSQL and used the PostreSQL JDBC Driver to access it.
+            We implemented the database using PostgreSQL and used the PostgreSQL JDBC Driver to access it.
             We built our dynamic website to access, update, insert, and delete all data in the database with Java Server Pages on and Apache Tomcat server.
             <br /> <br />
             Following project specifications, my partner and I modeled the database with an entity-relationahip diagram, which we transferred to a relational database schema.
