@@ -1,3 +1,8 @@
+import { HeadingWithImageAndCredit, BodyBox, HeadingWithImage } from "./Home";
+import postgresLogo from "./images/Logo_PostgreSQL.png";
+import processor from "./images/Intel_pentium4_1.5ghz_willamette_socek423.jpg"
+import planner from "./images/Personal_organizer_with_metallic_ring_binder.jpg"
+
 function Projects() {
   return (
     <>
@@ -33,12 +38,19 @@ function Projects() {
       </div>
 
 
+      {/* <a href="https://commons.wikimedia.org/wiki/File:Logo_PostgreSQL.png">Daniel Lundin</a>, <a href="http://opensource.org/licenses/bsd-license.php">BSD</a>, via Wikimedia Commons */}
       <div class="section reverse">
-        <div class="rounded-box heading-box">
-          <h2 class="heading"> Mock University Database </h2>
-        </div>
-        <div class="rounded-box body-box">
-          <p class="body">
+        {HeadingWithImageAndCredit({
+          heading: "Mock University Database",
+          image: postgresLogo,
+          creditName: "Daniel Lundin",
+          creditLicense: "BSD",
+          creditUrl: "https://commons.wikimedia.org/wiki/File:Logo_PostgreSQL.png",
+          creditLicenseUrl: "http://opensource.org/licenses/bsd-license.php"
+
+        })}
+        
+        <BodyBox>
             I worked with a partner to design and implement a university database, then efficiently access it on a webpage.
             We implemented the database using PostgreSQL and used the PostgreSQL JDBC Driver to access it.
             We built our dynamic website to access, update, insert, and delete all data in the database with Java Server Pages on and Apache Tomcat server.
@@ -48,17 +60,19 @@ function Projects() {
             After implementing these entry forms, we designed forms to allow users to view more complex data about individual students, professors, and courses using parameterized queries.
             To efficiently run some of these queries, we created triggers to maintain materialized views. We also used triggers to enforce constraints on data.
 
-          </p>
-        </div>
+        </BodyBox>
       </div>
 
 
       <div class="section">
-        <div class="rounded-box heading-box">
-          <h2 class="heading">Custom Processor </h2>
-        </div>
-        <div class="rounded-box body-box">
-          <p class="body">
+        {HeadingWithImage({
+          image: processor,
+          heading: "Custom Processor",
+          alt: "A computer processor",
+        })}
+        
+        <BodyBox>
+          
             I used System Verilog to design a synthesizeable computer processor adhering to constraints and capable of carrying out three programs.
             The processor accepted fixed-length 9-bit machine code and had a byte-wide data path, byte-wide registers, and byte-wide memory locations.
             The ALU could only accept operations comparable in complexity to addition.
@@ -69,8 +83,8 @@ function Projects() {
             for the processor.
             Using Java, I coded an assembler for the ISA. In the final Milestone, I wrote the assembly for each program and
             tested and debugged the processor and each program using ModelSim.
-          </p>
-        </div>
+          
+        </BodyBox>
       </div>
 
       <div class="section reverse">
@@ -113,13 +127,21 @@ function Projects() {
         </div>
       </div>
 
-
+      {/* <a href="https://commons.wikimedia.org/wiki/File:Personal_organizer_with_metallic_ring_binder.jpg">Old Photo Profile</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons */}
       <div class="section reverse">
-        <div class="rounded-box heading-box">
-          <h2 class="heading">Enhancing Digital Planner Design</h2>
-        </div>
-        <div class="rounded-box body-box">
-          <p class="body">
+        {HeadingWithImageAndCredit({
+          heading: "Enhancing Digital Planner Design",
+          image: planner,
+          alt: "A personal planner with a metallic ring binder",
+          creditName: "Old Photo Profile",
+          creditUrl: "https://commons.wikimedia.org/wiki/File:Personal_organizer_with_metallic_ring_binder.jpg",
+          creditLicense: "CC BY 2.0",
+          creditLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
+        }
+        )
+        
+        }
+        <BodyBox>
             As part of a Human-Computer Interaction class, three group members and I conducted a study
             to analyze university students' preference and use of physical and digital planners. We concluded university students largely use digital
             planners to for their functional convenience and physical planners for their emotional connection, frequently creating a system with both a physical and
@@ -133,8 +155,7 @@ function Projects() {
             appreciated, problems encountered, potential design improvements, and situational preferences in
             a report with an abstract, an introduction, related work, methods, discussion, and a conclusion.
 
-          </p>
-        </div>
+        </BodyBox>
       </div>
 
 
