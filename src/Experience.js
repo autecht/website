@@ -21,7 +21,7 @@ function Experience() {
           As a tutor for Database System Principles and Operating Systems, two large upper division courses at UC San Diego, I helped 300+ students understand
           complex concepts and work through technical problems by leading office and lab hours.
           <br></br><br></br>
-          I worked with Professors Deutch and Vianu while tutoring for Database System Principles, helping students understand relational algebra, SQL, schema design, and database theory.
+          I worked with Professors Deutsch and Vianu while tutoring for Database System Principles, helping students understand relational algebra, SQL, schema design, and database theory.
           I led biweekly/weekly office hours to help students debug complex SQL queries and understand course concepts and was active with detailed responses on the course forum.
           My interest in helping students led me to answer more Piazza questions than any other tutor in the course.
           <br></br><br></br>
