@@ -1,4 +1,5 @@
-import { HeadingWithImageAndCredit, BodyBox, HeadingWithImage, Heading } from "./Components";
+import { useState } from "react";
+import { HeadingWithImageAndCredit, BodyBox, HeadingWithImage, Heading, Section, ToggleButton } from "./Components";
 import postgresLogo from "./images/Logo_PostgreSQL.png";
 import processor from "./images/Intel_pentium4_1.5ghz_willamette_socek423.jpg"
 import planner from "./images/Personal_organizer_with_metallic_ring_binder.jpg"
@@ -6,10 +7,14 @@ import contextAwareVersionControl from "./images/resized-file.png"
 import pantryPal from "./images/pantryPalLogin.png"
 import quickToDo from "./images/quick-to-do.png"
 import simpleChess from "./images/SimpleChess.png"
-import { Section} from "./Components";
+import carlsen from "./images/CarlsenTataSteel.jpg"
+import layers from "./images/NetworkLayers.png"
+import osRole from "./images/OSRole.png"
+import MoreProjects from "./MoreProjects";
 
 
 function Projects() {
+  const [showMoreProjects, setShowMoreProjects] = useState(false);
   return (
     <>
       <div class="filler"></div>
@@ -18,7 +23,7 @@ function Projects() {
         <Heading heading="Projects" h1={true} />
       </Section>
 
-      <Section reverse = {true}>
+      <Section reverse={true}>
         {HeadingWithImage({
           href: "https://github.com/autecht/contextawareversioncontrol",
           image: contextAwareVersionControl,
@@ -60,7 +65,7 @@ function Projects() {
       </Section>
 
 
-      <Section reverse = {true}>
+      <Section reverse={true}>
         {HeadingWithImageAndCredit({
           heading: "Mock University Database",
           image: postgresLogo,
@@ -84,92 +89,32 @@ function Projects() {
         </BodyBox>
       </Section>
 
-
-
-      <Section>
-        <HeadingWithImage image={quickToDo} heading="Quick To-Do" alt="A screenshot of Quick To-Do" href="//github.com/autecht/quick-to-do" />
+      <Section reverse={false}>
+        <HeadingWithImageAndCredit
+          heading="Fine-Tuned Chess Transformer"
+          image={carlsen}
+          alt="Magnus Carlsen playing chess"
+          credicName="Vysotsky"
+          creditUrl="https://commons.wikimedia.org/wiki/File:TataSteelChess2018-33.jpg"
+          creditLicense="CC BY-SA 4.0"
+          creditLicenseUrl="https://creativecommons.org/licenses/by-sa/4.0"
+        />
 
         <BodyBox>
-          Quick To-Do is a command-line task manager designed to be simple to use while providing the user easy-to-understand and
-          optional features to organize and display tasks. Users can add, list, modify, and remove tasks with a label. They can optionally
-          add a due date and time, priority level, description, and tag to each task to modify how tasks are displayed, sorted, and found. Detailed
-          feedback and documentation for all options can be found within
-          the application or on GitHub.
+          As the final project for a Deep Learning class, my team fine-tuned a pretrained PyTorch chess transformers using Magnus Carlsen’s games to improve win rate against Stockfish Level 6 by 11%.
           <br /><br />
-          I learned the picocli library to implement command-line functionality and provide feedback. I used GraalVM to compile the
-          application into a stand-alone executable. To follow convention and use picocli, I researched and used the structure of typical
-          command-line applications. In order to read data from local files to be represented as objects, I created a custom wrapper class.
-        </BodyBox>
-      </Section>
-
-
-      <Section reverse = {true}>
-        {HeadingWithImage({
-          image: processor,
-          heading: "Custom Processor",
-          alt: "A computer processor",
-        })}
-
-        <BodyBox>
-
-          I used System Verilog to design a synthesizeable computer processor adhering to constraints and capable of carrying out three programs.
-          The processor accepted fixed-length 9-bit machine code and had a byte-wide data path, byte-wide registers, and byte-wide memory locations.
-          The ALU could only accept operations comparable in complexity to addition.
-          It was able calculate and compare the hamming distance, arithmetic difference, and product of combinations of 32 signed 16-bit numbers.
+          Since we were using a model trained using entire chess games, the most difficult part of this project was preprocessing the data to isolate Carlsen’s moves.
+          Once I understood the preprocessing code of the repository we were using, I modified the code to parse PGN files of Carlsen's games and encode only positions where it was Carlsen's move into an H5 file.
           <br /><br />
-          With the 3 programs and constraints in mind, I designed an initial ISA for the processor.
-          I wrote syntehsizeable System Verilog code to implement a processor that could carry out this ISA and created an initial testbench
-          for the processor.
-          Using Java, I coded an assembler for the ISA. In the final Milestone, I wrote the assembly for each program and
-          tested and debugged the processor and each program using ModelSim.
-
+          Otherwise, this project helped me to understand existing repositories based on documentation and the code itself.
         </BodyBox>
       </Section>
 
 
 
-      <Section>
-        {HeadingWithImageAndCredit({
-          heading: "Enhancing Digital Planner Design",
-          image: planner,
-          alt: "A personal planner with a metallic ring binder",
-          creditName: "Old Photo Profile",
-          creditUrl: "https://commons.wikimedia.org/wiki/File:Personal_organizer_with_metallic_ring_binder.jpg",
-          creditLicense: "CC BY 2.0",
-          creditLicenseUrl: "https://creativecommons.org/licenses/by/2.0"
-        }
-        )
-
-        }
-        <BodyBox>
-          As part of a Human-Computer Interaction class, three group members and I conducted a study
-          to analyze university students' preference and use of physical and digital planners. We concluded university students largely use digital
-          planners to for their functional convenience and physical planners for their emotional connection, frequently creating a system with both a physical and
-          digital planner to combine these benefits.
-
-          <br /><br />
-          Once our project proposal, which included a plan for conducting the rest of the project and a specific goal, was accepted,
-          we constructed a survey with qualitative and quantitative questions to gain insight into reasons behind university students' planner use.
-          We also designed an interview outline and conducted 25-minute interviews with volunteers. We identified broad categories with which to observe trends
-          in qualitative responses. Considering quantitative responses, qualitative trends, and qualitative responses, we identified prominent tools used as physical and digital planners, factors influencing planner choice, aspects students
-          appreciated, problems encountered, potential design improvements, and situational preferences in
-          a report with an abstract, an introduction, related work, methods, discussion, and a conclusion.
-
-        </BodyBox>
-      </Section>
-
-
-
-      <Section reverse = {true}>
-        <HeadingWithImage image={simpleChess} heading="Simple Chess" alt="chess board" href="https://github.com/autecht/simple-chess" />
-        
-        <BodyBox>
-
-          Simple Chess is an interface with which users can manipulate chess pieces on a board. It an HTML website with CSS
-          and JavaScript. The site features original SVG piece models and uses HTML text validation to validate usernames. I created this website to solidify what I learned from an online front-end course.
-
-        </BodyBox>
-      </Section>
+      {showMoreProjects && <MoreProjects />}
+      <ToggleButton onClick={() => setShowMoreProjects(!showMoreProjects)} text={showMoreProjects ? "View Fewer Projects" : "View More Projects"}></ToggleButton>
+      <div class="filler"></div>
     </>
   );
 

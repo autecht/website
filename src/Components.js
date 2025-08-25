@@ -5,7 +5,11 @@ function ImageCredit(name, url, license, licenseUrl) {
   );
 }
 
-
+export function ToggleButton({ onClick, text }) {
+  return (
+    <button class="rounded-box heading-box name" onClick={onClick}>{text}</button>
+  );
+}
 
 export function Heading({ heading, h1 = false, href = "" }) {
   const headingText = href? <a href={href}>{heading}</a>:heading;
