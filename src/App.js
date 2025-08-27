@@ -1,9 +1,18 @@
 import './App.css';
 import {Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import Projects from './Projects';
-import Contact from './Contact';
-import Experience from './Experience';
+import {lazy, Suspense} from 'react';
+import Loading from './Loading';
+
+
+
+
+const Home = lazy(() => import('./pages/Home'))  ;
+const Projects = lazy (() => import('./pages/Projects'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Experience = lazy(() => import('./pages/Experience'))
+
+
+
 
 function App() {
   return (
@@ -21,12 +30,33 @@ function App() {
 
         </div>
       </div>
+      <div className = "filler"></div>
     <Routes>
-      <Route path="/" element = {<Home/>} />
-      <Route path = "/projects" element = {<Projects />}></Route>
-      <Route path = "/contact" element = {<Contact />}></Route>
-      <Route path = "/experience" element = {<Experience />}></Route>
+      <Route path="/" element = {
+          <Suspense fallback={<Loading />}>
+            <Home />
+        </Suspense>
+        } />
+      <Route path = "/projects" element = {
+        <Suspense fallback = {<Loading />}>
+          <Projects />
+        </Suspense>
+      }></Route>
+      <Route path = "/contact" element = {
+        <Suspense fallback = {<Loading />}>
+          <Contact />
+        </Suspense>
+      }></Route>
+      <Route path = "/experience" element = {
+        <Suspense fallback = {<Loading />}>
+          <Experience />
+        </Suspense>
+        }></Route>
+
+
+        <Route path="*" element={<><Loading /> </>} />
     </Routes>
+    <div className = "filler"></div>
     <div className="footer"></div>
     </div>
     

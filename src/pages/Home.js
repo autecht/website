@@ -1,13 +1,12 @@
-import graduation from './images/graduation.JPEG'
-import computer_science from './images/Computer_Science_and_Engineering.jpg'
-import courtright from './images/Courtright.jpg'
-import { BodyBox, HeadingWithImage, HeadingWithImageAndCredit, Section} from './Components';
+import graduation from '../images/graduation.JPEG'
+import computer_science from '../images/Computer_Science_and_Engineering.jpg'
+import courtright from '../images/Courtright.jpg'
+import { BodyBox, HeadingWithImage, HeadingWithImageAndCredit, Section} from '../Components';
 
 
 function Home() {
   return (
     <>
-      <div className="filler"></div>
 
       <Section>
         {HeadingWithImage({ heading: "About", image: graduation, h1: true })}

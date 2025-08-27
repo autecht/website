@@ -1,10 +1,9 @@
-import {Heading, BodyBox } from "./Components";
+import {Heading, BodyBox } from "../Components";
 
 function Contact() {
   return (<>
 
-    <div class="filler"></div>
-      <div class = "section column">
+      <div className = "section column">
       <Heading h1={true} heading="Get In Touch" />
       
 

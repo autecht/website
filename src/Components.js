@@ -20,13 +20,10 @@ export function Heading({ heading, h1 = false, href = "" }) {
 export function HeadingWithImage({ heading, image, alt = "", h1 = false, href = "" }) {
   const headingText = href? <a href={href}>{heading}</a>:heading;
   return <div class="rounded-box heading-box">
-
     <img class="about-image" alt={alt} src={image}></img>
     {h1 ? <h1 class="heading">{headingText}</h1> : <h2 class="heading">{headingText}</h2>}
-
   </div>;
 }
-
 
 export function HeadingWithImageAndCredit({ heading, image, alt = "", href = "", creditName, creditUrl, creditLicense, creditLicenseUrl }) {
   const headingText = href? <a href={href}>{heading}</a>:heading;

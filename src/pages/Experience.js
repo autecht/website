@@ -1,12 +1,10 @@
-import { React } from "react";
-import { Section, Heading, BodyBox} from "./Components";
+import { Section, Heading, BodyBox} from "../Components";
 
 function Experience() {
   return (
     <>
 
 
-      <div class="filler"></div>
 
       <Section>
         <Heading h1={true} heading="Experience" />
@@ -33,10 +31,10 @@ function Experience() {
 
 
       <Section reverse = {true}>
-        <div class="rounded-box heading-box">
-          <h2 class="heading">Student Worker</h2><div class="name">January 2023-November 2023 </div>
+        <div className="rounded-box heading-box">
+          <h2 className="heading">Student Worker</h2><div className="name">January 2023-November 2023 </div>
         </div>
-        <div class="rounded-box body-box">
+        <div className="rounded-box body-box">
           <p>As a student worker at the UCSD dining hall, I worked with team in various roles to prepare food, wash dishes, provide pleasant customer service, and preserve smooth operation of the restaurant.
             I mostly worked as a food preparer, learning to efficiently and safely prepare food in an organized environment. During this time, I developed strong connections with my coworkers and learned to work well in a team.
           </p>
@@ -44,8 +42,8 @@ function Experience() {
       </Section>
 
       <Section>
-        <div class="rounded-box heading-box">
-          <h2 class="heading">Dishwasher/Delivery Driver</h2><div class="name">August 2021-September 2021 </div>
+        <div className="rounded-box heading-box">
+          <h2 className="heading">Dishwasher/Delivery Driver</h2><div className="name">August 2021-September 2021 </div>
         </div>
         <BodyBox>
           My first job was at a local Italian restaurannt called DiCicco's the summer before college.

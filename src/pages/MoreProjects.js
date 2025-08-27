@@ -1,14 +1,10 @@
-import { HeadingWithImageAndCredit, BodyBox, HeadingWithImage, Heading, Section } from "./Components";
-import postgresLogo from "./images/Logo_PostgreSQL.png";
-import processor from "./images/Intel_pentium4_1.5ghz_willamette_socek423.jpg"
-import planner from "./images/Personal_organizer_with_metallic_ring_binder.jpg"
-import contextAwareVersionControl from "./images/resized-file.png"
-import pantryPal from "./images/pantryPalLogin.png"
-import quickToDo from "./images/quick-to-do.png"
-import simpleChess from "./images/SimpleChess.png"
-import carlsen from "./images/CarlsenTataSteel.jpg"
-import layers from "./images/NetworkLayers.png"
-import osRole from "./images/OSRole.png"
+import { HeadingWithImageAndCredit, BodyBox, HeadingWithImage, Heading, Section } from "../Components";
+import processor from "../images/Intel_pentium4_1.5ghz_willamette_socek423.jpg"
+import planner from "../images/Personal_organizer_with_metallic_ring_binder.jpg"
+import quickToDo from "../images/quick-to-do.png"
+import simpleChess from "../images/SimpleChess.png"
+import layers from "../images/NetworkLayers.png"
+import osRole from "../images/OSRole.png"
 
 
 function MoreProjects() {
