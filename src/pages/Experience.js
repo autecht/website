@@ -13,9 +13,9 @@ function Experience() {
       </Section>
 
       <Section>
-        <div class="rounded-box heading-box">
-          <h2 class="heading">Tutor</h2>
-          <div class="name">September 2023-June 2024 </div>
+        <div className="rounded-box heading-box">
+          <h2 className="heading">Tutor</h2>
+          <div className="name">September 2023-June 2024 </div>
         </div>
         <BodyBox>
           As a tutor for Database System Principles and Operating Systems, two large upper division courses at UC San Diego, I helped 300+ students understand

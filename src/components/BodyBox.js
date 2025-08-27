@@ -1,6 +1,6 @@
 export default function BodyBox({ children }) {
-  return <div class="rounded-box body-box">
-    <p class="body">
+  return <div className="rounded-box body-box">
+    <p className="body">
       {children}
     </p>
   </div>;
