@@ -9,7 +9,8 @@ import Loading from './Loading';
 const Home = lazy(() => import('./pages/Home'))  ;
 const Projects = lazy (() => import('./pages/Projects'));
 const Contact = lazy(() => import('./pages/Contact'));
-const Experience = lazy(() => import('./pages/Experience'))
+const Experience = lazy(() => import('./pages/Experience'));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 
 
@@ -53,8 +54,7 @@ function App() {
         </Suspense>
         }></Route>
 
-
-        <Route path="*" element={<><Loading /> </>} />
+        <Route path="*" element={<><NotFound /> </>} />
     </Routes>
     <div className = "filler"></div>
     <div className="footer"></div>
