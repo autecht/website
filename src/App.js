@@ -1,13 +1,15 @@
 import './App.css';
-import {Routes, Route } from 'react-router-dom';
-import {lazy, Suspense} from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
 import Loading from './Loading';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 
 
-const Home = lazy(() => import('./pages/Home'))  ;
-const Projects = lazy (() => import('./pages/Projects'));
+const Home = lazy(() => import('./pages/Home'));
+const Projects = lazy(() => import('./pages/Projects'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Experience = lazy(() => import('./pages/Experience'));
 const NotFound = lazy(() => import("./pages/NotFound"));
@@ -17,49 +19,36 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
   return (
-    <div className = "container">
-    <div className="header">
-
-        <div className="menu-container">
-          <span className="name"> Arthur Utecht </span>
-        </div>
-        <div className="menu-container">
-          <a href="#/" className="menu">About</a>
-          <a href="#/projects" className="menu">Projects</a>
-          <a href="#/experience" className="menu">Experience</a>
-          <a href="#/contact" className="menu">Contact</a>
-
-        </div>
-      </div>
-      <div className = "filler"></div>
-    <Routes>
-      <Route path="/" element = {
+    <div className="container">
+      <Header/>
+      
+      <Routes>
+        <Route path="/" element={
           <Suspense fallback={<Loading />}>
             <Home />
-        </Suspense>
+          </Suspense>
         } />
-      <Route path = "/projects" element = {
-        <Suspense fallback = {<Loading />}>
-          <Projects />
-        </Suspense>
-      }></Route>
-      <Route path = "/contact" element = {
-        <Suspense fallback = {<Loading />}>
-          <Contact />
-        </Suspense>
-      }></Route>
-      <Route path = "/experience" element = {
-        <Suspense fallback = {<Loading />}>
-          <Experience />
-        </Suspense>
+        <Route path="/projects" element={
+          <Suspense fallback={<Loading />}>
+            <Projects />
+          </Suspense>
+        }></Route>
+        <Route path="/contact" element={
+          <Suspense fallback={<Loading />}>
+            <Contact />
+          </Suspense>
+        }></Route>
+        <Route path="/experience" element={
+          <Suspense fallback={<Loading />}>
+            <Experience />
+          </Suspense>
         }></Route>
 
         <Route path="*" element={<><NotFound /> </>} />
-    </Routes>
-    <div className = "filler"></div>
-    <div className="footer"></div>
+      </Routes>
+      <Footer></Footer>
     </div>
-    
+
   );
 }
 

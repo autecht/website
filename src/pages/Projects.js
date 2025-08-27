@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { HeadingWithImageAndCredit, BodyBox, HeadingWithImage, Heading, Section, ToggleButton } from "../Components";
+import BodyBox from "../components/BodyBox";
+import Heading from "../components/Heading";
+import Section from "../components/Section";
+import ToggleButton from "../components/ToggleButton";
+
 import postgresLogo from "../images/Logo_PostgreSQL.png";
 import contextAwareVersionControl from "../images/resized-file.png"
 import pantryPal from "../images/pantryPalLogin.png"
@@ -18,7 +22,7 @@ function Projects() {
       </Section>
 
       <Section reverse={true}>
-        {HeadingWithImage({
+        {Heading({
           href: "https://github.com/autecht/contextawareversioncontrol",
           image: contextAwareVersionControl,
           heading: "Context-Aware Version Control",
@@ -41,7 +45,7 @@ function Projects() {
       </Section>
 
       <Section>
-        <HeadingWithImage image={pantryPal} heading="pantryPal" href="https://github.com/ucsd-cse110-fa23/cse-110-project-team-24" />
+        <Heading image={pantryPal} heading="pantryPal" href="https://github.com/ucsd-cse110-fa23/cse-110-project-team-24" />
 
         <BodyBox>
           My group created a Java application to generate and store unique recipes given certain ingredients.
@@ -60,7 +64,7 @@ function Projects() {
 
 
       <Section reverse={true}>
-        {HeadingWithImageAndCredit({
+        {Heading({
           heading: "Mock University Database",
           image: postgresLogo,
           creditName: "Daniel Lundin",
@@ -84,7 +88,7 @@ function Projects() {
       </Section>
 
       <Section reverse={false}>
-        <HeadingWithImageAndCredit
+        <Heading
           heading="Fine-Tuned Chess Transformer"
           image={carlsen}
           alt="Magnus Carlsen playing chess"

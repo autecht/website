@@ -1,7 +1,9 @@
 import graduation from '../images/graduation.JPEG'
 import computer_science from '../images/Computer_Science_and_Engineering.jpg'
 import courtright from '../images/Courtright.jpg'
-import { BodyBox, HeadingWithImage, HeadingWithImageAndCredit, Section} from '../Components';
+import BodyBox from "../components/BodyBox";
+import Heading from "../components/Heading";
+import Section from "../components/Section";
 
 
 function Home() {
@@ -9,11 +11,11 @@ function Home() {
     <>
 
       <Section>
-        {HeadingWithImage({ heading: "About", image: graduation, h1: true })}
+        {Heading({ heading: "About", image: graduation, h1: true })}
       </Section>
 
       <Section>
-        {HeadingWithImageAndCredit({
+        {Heading({
           heading: "My Journey in CS",
           image: computer_science,
           creditName: "AndyrooP",
@@ -31,7 +33,7 @@ function Home() {
       </Section>
 
       <Section reverse = {true}>
-        <HeadingWithImage image={courtright} heading="More About Me" />
+        <Heading image={courtright} heading="More About Me" />
 
         <BodyBox>
           Outside of academics, I enjoy exploring new worlds and lives through reading, video games, and shows.

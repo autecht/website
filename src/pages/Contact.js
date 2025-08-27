@@ -1,4 +1,6 @@
-import {Heading, BodyBox } from "../Components";
+import Heading from "../components/Heading";
+import BodyBox from "../components/BodyBox";
+
 
 function Contact() {
   return (<>

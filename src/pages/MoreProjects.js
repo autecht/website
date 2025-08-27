@@ -1,5 +1,6 @@
-import { HeadingWithImageAndCredit, BodyBox, HeadingWithImage, Heading, Section } from "../Components";
-import processor from "../images/Intel_pentium4_1.5ghz_willamette_socek423.jpg"
+import BodyBox from "../components/BodyBox";
+import Heading from "../components/Heading";
+import Section from "../components/Section";import processor from "../images/Intel_pentium4_1.5ghz_willamette_socek423.jpg"
 import planner from "../images/Personal_organizer_with_metallic_ring_binder.jpg"
 import quickToDo from "../images/quick-to-do.png"
 import simpleChess from "../images/SimpleChess.png"
@@ -7,11 +8,13 @@ import layers from "../images/NetworkLayers.png"
 import osRole from "../images/OSRole.png"
 
 
+
+
 function MoreProjects() {
   return (
     <>
       <Section reverse={true}>
-        <HeadingWithImage image={quickToDo} heading="Quick To-Do" alt="A screenshot of Quick To-Do" href="//github.com/autecht/quick-to-do" />
+        <Heading image={quickToDo} heading="Quick To-Do" alt="A screenshot of Quick To-Do" href="//github.com/autecht/quick-to-do" />
 
         <BodyBox>
           Quick To-Do is a command-line task manager designed to be simple to use while providing the user easy-to-understand and
@@ -28,7 +31,7 @@ function MoreProjects() {
 
 
       <Section>
-        <HeadingWithImageAndCredit
+        <Heading
           heading="Nachos Operating System Extension"
           image={osRole}
           alt="A diagram showing the role of the operating system"
@@ -51,7 +54,7 @@ function MoreProjects() {
 
       <Section reverse={true}>
 
-        <HeadingWithImageAndCredit
+        <Heading
           heading="Computer Systems Messages"
           image={layers}
           alt="A diagram of the OSI and TCP/IP network models"
@@ -73,7 +76,7 @@ function MoreProjects() {
 
 
       <Section reverse={false}>
-        {HeadingWithImage({
+        {Heading({
           image: processor,
           heading: "Custom Processor",
           alt: "A computer processor",
@@ -98,7 +101,7 @@ function MoreProjects() {
 
 
       <Section reverse={true}>
-        {HeadingWithImageAndCredit({
+        {Heading({
           heading: "Enhancing Digital Planner Design",
           image: planner,
           alt: "A personal planner with a metallic ring binder",
@@ -130,7 +133,7 @@ function MoreProjects() {
 
 
       <Section reverse={false}>
-        <HeadingWithImage image={simpleChess} heading="Simple Chess" alt="chess board" href="https://github.com/autecht/simple-chess" />
+        <Heading image={simpleChess} heading="Simple Chess" alt="chess board" href="https://github.com/autecht/simple-chess" />
 
         <BodyBox>
 

@@ -1,4 +1,6 @@
-import { Section, Heading, BodyBox} from "../Components";
+import Section from "../components/Section";
+import Heading from "../components/Heading";
+import BodyBox from "../components/BodyBox";
 
 function Experience() {
   return (
