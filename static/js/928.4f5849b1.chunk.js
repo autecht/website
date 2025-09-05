@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[928],{574:(e,t,c)=>{c.r(t),c.d(t,{default:()=>r});const s=c.p+"static/media/P5-project-team-60.75248460bbcfd942ade4.pdf";var a=c(579);const r=function(){return(0,a.jsx)(a.Fragment,{children:(0,a.jsx)("object",{data:s,width:"100%",height:"2000",children:"Research Report"})})}}}]);
+//# sourceMappingURL=928.4f5849b1.chunk.js.map

@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.50302d38.css",
-    "main.js": "/static/js/main.1f6700d9.js",
+    "main.js": "/static/js/main.15970427.js",
     "static/js/121.bcdb4046.chunk.js": "/static/js/121.bcdb4046.chunk.js",
-    "static/js/537.65b4d84f.chunk.js": "/static/js/537.65b4d84f.chunk.js",
-    "static/js/615.09af24f5.chunk.js": "/static/js/615.09af24f5.chunk.js",
+    "static/js/537.1c75fd3e.chunk.js": "/static/js/537.1c75fd3e.chunk.js",
+    "static/js/615.cce05f61.chunk.js": "/static/js/615.cce05f61.chunk.js",
     "static/js/903.842a3aab.chunk.js": "/static/js/903.842a3aab.chunk.js",
+    "static/js/928.4f5849b1.chunk.js": "/static/js/928.4f5849b1.chunk.js",
     "static/js/900.a8fabcde.chunk.js": "/static/js/900.a8fabcde.chunk.js",
     "static/media/Computer_Science_and_Engineering.jpg": "/static/media/Computer_Science_and_Engineering.17addf801df887646299.jpg",
     "static/media/Personal_organizer_with_metallic_ring_binder.jpg": "/static/media/Personal_organizer_with_metallic_ring_binder.69c4430010ea435dd993.jpg",
     "static/media/graduation.JPEG": "/static/media/graduation.c551a2a3b09a42da3a4b.JPEG",
     "static/media/Courtright.jpg": "/static/media/Courtright.f05d0e09014410b02457.jpg",
     "static/media/Intel_pentium4_1.5ghz_willamette_socek423.jpg": "/static/media/Intel_pentium4_1.5ghz_willamette_socek423.9b1c2c414b283f9419b1.jpg",
+    "static/media/P5-project-team-60.pdf": "/static/media/P5-project-team-60.75248460bbcfd942ade4.pdf",
     "static/media/resized-file.png": "/static/media/resized-file.2a9d538c235c97c335de.png",
     "static/media/pantryPalLogin.png": "/static/media/pantryPalLogin.40f449221e69e93e6de3.png",
     "static/media/quick-to-do.png": "/static/media/quick-to-do.3738ccd93a3989016b66.png",
@@ -22,15 +24,16 @@
     "static/media/CarlsenTataSteel.jpg": "/static/media/CarlsenTataSteel.ba9b338427801bc76750.jpg",
     "index.html": "/index.html",
     "main.50302d38.css.map": "/static/css/main.50302d38.css.map",
-    "main.1f6700d9.js.map": "/static/js/main.1f6700d9.js.map",
+    "main.15970427.js.map": "/static/js/main.15970427.js.map",
     "121.bcdb4046.chunk.js.map": "/static/js/121.bcdb4046.chunk.js.map",
-    "537.65b4d84f.chunk.js.map": "/static/js/537.65b4d84f.chunk.js.map",
-    "615.09af24f5.chunk.js.map": "/static/js/615.09af24f5.chunk.js.map",
+    "537.1c75fd3e.chunk.js.map": "/static/js/537.1c75fd3e.chunk.js.map",
+    "615.cce05f61.chunk.js.map": "/static/js/615.cce05f61.chunk.js.map",
     "903.842a3aab.chunk.js.map": "/static/js/903.842a3aab.chunk.js.map",
+    "928.4f5849b1.chunk.js.map": "/static/js/928.4f5849b1.chunk.js.map",
     "900.a8fabcde.chunk.js.map": "/static/js/900.a8fabcde.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.50302d38.css",
-    "static/js/main.1f6700d9.js"
+    "static/js/main.15970427.js"
   ]
 }
