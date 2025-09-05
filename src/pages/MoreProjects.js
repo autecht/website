@@ -31,7 +31,7 @@ function MoreProjects() {
 
 
       <Section>
-        <Heading
+        <Heading // Private Repo
           heading="Nachos Operating System Extension"
           image={osRole}
           alt="A diagram showing the role of the operating system"
@@ -56,6 +56,7 @@ function MoreProjects() {
 
         <Heading
           heading="Computer Systems Messages"
+          href="https://github.com/ucsd-cse123-fa24/project-1a-autecht"
           image={layers}
           alt="A diagram of the OSI and TCP/IP network models"
           creditName="Dave Braunschweig"
@@ -67,7 +68,7 @@ function MoreProjects() {
         <BodyBox>
           In my Computer Systems class, I wrote essential logic in C in a containerized Unix environment to allow hosts to send messages to each other.
           First, I implemented network-layer functionality to allow hosts to send, receive, and combine packets -- this involved using the Sliding Window Protocol and then adding AIMD, Slow Start, Fast Retransmission, and Fast Recovery to improve throughput and avoid congestion.
-          Later, I created IP routers to parse, appropriately modify, and forward packets between hosts on different networks.
+          As part of the <a href="https://github.com/ucsd-cse123-fa24/project-1a-autecht">next project</a>, I created IP routers to parse, appropriately modify, and forward packets between hosts on different networks.
           This included logic for ARP requests and replies and ICMP packets to notify hosts of adverse conditions.
           <br /><br />
           Aside from solidifying my understanding of computer systems concepts, I learned to work in a Docker environment. Due to the difficulty of identifying bugs inn a distributed system, I also learned to methodically test and debug code in a complex codebase.
@@ -103,6 +104,7 @@ function MoreProjects() {
       <Section reverse={true}>
         {Heading({
           heading: "Enhancing Digital Planner Design",
+          href: "/#/projects/planner",
           image: planner,
           alt: "A personal planner with a metallic ring binder",
           creditName: "Old Photo Profile",

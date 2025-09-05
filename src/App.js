@@ -12,6 +12,7 @@ const Home = lazy(() => import('./pages/Home'));
 const Projects = lazy(() => import('./pages/Projects'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Experience = lazy(() => import('./pages/Experience'));
+const Planner = lazy(()=>import(`./pages/hidden/Planner`))
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 
@@ -44,6 +45,10 @@ function App() {
           </Suspense>
         }></Route>
 
+        <Route path="/projects/planner" element={<Suspense fallback={<Loading/>}>
+            <Planner></Planner>
+          </Suspense>}>    
+        </Route>
         <Route path="*" element={<><NotFound /> </>} />
       </Routes>
       <Footer></Footer>

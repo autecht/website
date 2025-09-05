@@ -91,6 +91,7 @@ function Projects() {
         <Heading
           heading="Fine-Tuned Chess Transformer"
           image={carlsen}
+          href="https://github.com/autecht/chess-transformers"
           alt="Magnus Carlsen playing chess"
           credicName="Vysotsky"
           creditUrl="https://commons.wikimedia.org/wiki/File:TataSteelChess2018-33.jpg"
